@@ -1,0 +1,29 @@
+Props are the arguments you pass to a function or
+class, but since your components are transformed into HTML-like objects
+with JSX, you will pass the props like they are HTML attributes. Unlike
+HTML elements, you can pass many different data types, from strings, to
+arrays, to objects, and even functions.
+
+Idea:
+Here you will create a component that will display information about
+animals. This component will take the name and scientific name of the
+animal as strings, the size as an integer, the diet as an array of strings, and
+additional information as an object. You’ll pass the information to the new
+component as props and consume that information in your component.
+
+
+1) Agregamos el componente AnimalCard en App.JS
+2) En el componenete agregado ponemos el atributo key y pasamos la prop name
+3) En AnimalCard.js, destructuramos la prop name primero y luego la usamos
+4) Hacemos lo mismo con las demas prop, primero se agregan en App.js y luego en AnimalCard.js
+5) Tambien se puede pasar una funcion como prop
+6) Creamos la funcion showAdditional en App.js y la pasamos para ser utilizada en AnimalCard.js
+
+The advantage of destructring is that you can collect unused props and
+use the object rest operator.
+
+PropTypes act like other type systems by explicitly defining the type
+of data you expect to receive for a certain prop
+Unlike most type systems, PropTypes is a runtime check, so if the props do
+not match the type the code will still compile, but will also display a
+console error.
